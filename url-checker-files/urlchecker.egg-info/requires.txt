@@ -1,0 +1,10 @@
+fake-useragent@ git+https://github.com/danger89/fake-useragent@master#egg=fake-useragent
+requests>=2.18.4
+
+[all]
+pytest>=4.6.2
+requests>=2.18.4
+selenium
+
+[selenium]
+selenium
