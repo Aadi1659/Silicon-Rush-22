@@ -1,0 +1,117 @@
+<%- include("partials/header") -%> 
+
+<!--Home Section-->
+<div class="home">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nvbr">
+      <a class="navbar-brand title" href="#">
+        <img src="phishing.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        Phish.com
+      </a>
+      <div class="collapse navbar-collapse pad_items" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" style="font-size:1.25rem" href="#home">HOME</a>
+          <a class="nav-item nav-link" style="font-size:1.25rem" href="#about">FEATURES</a>
+          <a class="nav-item nav-link" style="font-size:1.25rem" href="#contact">CONTACT US</a>
+          <!-- <a class="nav-item nav-link disabled" href="#"></a> -->
+        </div>
+      </div>
+    </nav>
+    <img class="img1" src="home_pic1.png">
+    <div class="text">
+      <h3 class="home_h3">Are you getting</h3>
+      <h1 class="home_h1">PHISHED???</h1>
+
+      <p class="quote">IoT without SECURITY = internet of threats</p>
+      <form class="input_url" action="/" method="post">
+        <div class="form-floating mb-3 flt">
+          <input type="url" class="form-control form-control-sm"id="floatingInput" placeholder=".form-control-sm" name="enteredUrl" data-sb-validations="required,url">
+          <!-- <input class="form-control form-control-lg" id="check1" type="url" placeholder="Please enter URL" data-sb-validations="required,url" /> -->
+            <div class="invalid-feedback text-white" data-sb-feedback="floatingInput:required">URL is required.</div>
+            <div class="invalid-feedback text-white" data-sb-feedback="floatingInput:url">URL is not valid.</div>
+          <label for="floatingInput">URL</label>
+        </div>
+        <div class="text2">
+          <input type="submit" value="Check">
+          <p id="valid"></p>
+        </div>
+      </form>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br>
+
+
+<!--About Section-->
+<p class="Carousel">Features</p>
+<br><br>
+  <div id="about">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner inner">
+    <div class="carousel-item active ">
+      <img src="typo.png" class="carousel_pic" >
+      <em>Typosquatting</em>
+    </div>
+    <div class="carousel-item">
+      <img src="tld.png" class="carousel_pic">
+      <em>Top level domains</em>
+    </div>
+    <div class="carousel-item">
+      <img src="subdomain.png" class="carousel_pic">
+      <em>Subdomain</em>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+  </div>
+
+  <div id="contact">
+
+  </div>
+
+  <br><br><br><br><br><br><br><br>
+  
+  
+<h3>Entered URL is <%=enteredUrl%></h3>
+<h3>The protocol is <%=protocol%></h3>
+<h3>The hostname is <%=hostname%></h3>
+<h3>The subdomain is <%=subdomain%></h3>
+<h3>The hostname is<%=hostname%></h3>
+<h3>The second level domain is <%=secondLevelDomain%></h3>
+<h3>The top level domain is <%=topLevelDomain%></h3>
+<h3>The directory is <%=directory%></h3>
+<h3>The file is <%=file%></h3>
+<!-- <script>
+
+
+		var expression =
+/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
+		var regex = new RegExp(expression);
+		var url = 'https://hjhjj.com';
+		//el_up.innerHTML = "URL = '" + url + "'";
+
+		function RUN() {
+			var res = "";
+			if (url.match(regex)) {
+				res = "Valid URL";
+			} else {
+				res = "Invalid URL";
+			}
+			//el_down.innerHTML = res;
+            console.log(res);
+            document.querySelector("#valid").innerHTML(res);
+
+		}
+</script> -->
+<%- include("partials/footer") -%>
