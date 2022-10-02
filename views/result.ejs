@@ -10,7 +10,15 @@
       
       <title>Results</title>
       <link rel="icon" href="IEEE Media/download.ico">
-      
+      <style>
+            h3{
+                  color:white;
+                  position: relative;
+                  top: 50%;
+                  
+                  
+            }
+      </style>
 
 </head>
 
@@ -39,9 +47,10 @@
                         <source src="/IEEE Media/animation_skull.mp4" type="video/mp4">
                   </video>
             </div>        
-            <h2 id="result_text" class="result_red">Unsafe Website</h2>
+            <h2 id="result_text" class="result_red">Unsafe Website and has a score of <%=score%></h2>
             <br>
             <a id="checking_url" class="url_" href="" target="_blank">placeholder: URL is supposed to come here</a>
+            
       </div>
 <!-- /* Red Theme Above */ -->
 <!-- /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */ -->
@@ -68,17 +77,17 @@
                         <source src="/IEEE Media/animation_dove.mp4" type="video/mp4" s>
                   </video>
             </div>        
-            <h2 id="result_text" class="result_blue">Website is Safe</h2>
+            <h2 id="result_text" class="result_blue">Website is Safe and has a score of <%=score%></h2>
             <br>
-            <a id="checking_url" class="url_" href="" target="_blank">placeholder: URL is supposed to come here</a>
+            <a id="checking_url" class="url_" href="<%=enteredUrl%>" target="_blank">URL is <%=enteredUrl%></a>
             
       </div>
       <script>
-          var score = '<%score%>'; // this score is based on how safe the website is, higher the score, safer it is
+          var score = '<%=score%>'; // this score is based on how safe the website is, higher the score, safer it is
           console.log(score);
       
           
- if (score >= 50) {
+ if (score >= 30 ) {
        
        document.getElementById("red").style.display = "none";    // unsafe website | red theme
        document.getElementById("navbar_red").style.display = "none"; // safe website | blue theme

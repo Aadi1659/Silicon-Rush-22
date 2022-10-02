@@ -11,11 +11,11 @@
     animation: change_red 0.5s forwards;      
     background: #1e1e1e;
     /* background-image: linear-gradient(to right bottom, #1e1e1e, #13172b); */
-    height: 675px;
+    height: 1200px;
 
     display: flex;
     font-family: monospace;
-}
+}   
 
 @keyframes change_red {
 
@@ -64,7 +64,7 @@
     color: white;
     position: absolute;
     top: 25%;
-    left: 40%;
+    left: 30%;
     stroke: black;
     
 }
@@ -85,7 +85,7 @@
     animation: change_blue 0.5s forwards;      
     background: #1e1e1e;
     /* background-image: linear-gradient(to right bottom, #1e1e1e, #13172b); */
-    height: 675px;
+    height: 1200px;
 
     display: flex;
     font-family: monospace;
@@ -140,7 +140,7 @@
     color: white;
     position: absolute;
     top: 25%;
-    left: 40%;
+    left: 30%;
     stroke: black;
     
 }
